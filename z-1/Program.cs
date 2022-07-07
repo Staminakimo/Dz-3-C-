@@ -8,14 +8,14 @@
 Console.WriteLine("Напиши пятизначное число: ");
 string number = Console.ReadLine();
 int UsNumber = int.Parse(number);
-int firstNumber = UsNumber/10000;
-int secondNumber = (UsNumber / 1000)%10;
-int thirdNumber = (UsNumber % 1000)/100;
-int fourthNumber= (UsNumber %100)/10;
-int fifthNumber = UsNumber %10;
+int firstNumber = UsNumber / 10000;
+int secondNumber = (UsNumber / 1000) % 10;
+int thirdNumber = (UsNumber % 1000) / 100;
+int fourthNumber = (UsNumber % 100) / 10;
+int fifthNumber = UsNumber % 10;
 if (firstNumber == fifthNumber && secondNumber == fourthNumber)
 {
-Console.WriteLine($"Число {number} является палиндромом");
+    Console.WriteLine($"Число {number} является палиндромом");
 }
 else
 {
